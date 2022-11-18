@@ -1,3 +1,14 @@
 .vscode/
 Matala1.txt
 check_submition.py
+advancedClassificationLoop.o
+advancedClassificationRecursion.o
+basicClassification.o
+libclassloops.a
+libclassloops.so
+libclassrec.a
+libclassrec.so
+main.o
+maindloop
+maindrec
+mains

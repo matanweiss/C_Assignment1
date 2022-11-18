@@ -1,4 +1,4 @@
-all: mains maindloop maindrec
+all: mains loops maindloop maindrec
 
 loops: libclassloops.a
 
