@@ -28,10 +28,10 @@ libclassrec.so: advancedClassificationRecursion.o basicClassification.o
 
 
 maindloop: main.o libclassloops.so
-	gcc -Wall -o maindloop main.o libclassloops.so -ldl
+	gcc -Wall -o maindloop main.o ./libclassloops.so
 
 maindrec: main.o libclassrec.so
-	gcc -Wall -o maindrec main.o libclassrec.so -ldl
+	gcc -Wall -o maindrec main.o ./libclassrec.so
 
 clean:
 	rm -f maindloop maindrec mains libclassrec.* libclassloops.* *.o
