@@ -5,7 +5,8 @@ int main()
 {
     int n1, n2;
     printf("Enter two numbers: ");
-    scanf("%d %d", &n1, &n2);
+    scanf("%d", &n1);
+    scanf("%d", &n2);
     printf("Prime numbers: ");
     for (int i = n1; i <= n2; i++)
     {
