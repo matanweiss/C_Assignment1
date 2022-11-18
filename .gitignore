@@ -1,4 +1,6 @@
 .vscode/
+inputs/
+outputs/
 Matala1.txt
 check_submition.py
 advancedClassificationLoop.o
