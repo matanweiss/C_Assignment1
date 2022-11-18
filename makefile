@@ -17,12 +17,12 @@ mains: main.o libclassrec.a
 loopd: libclassloops.so 
 
 libclassloops.so: advancedClassificationLoop.o basicClassification.o
-	gcc -shared -o libclassloops.so advancedClassificationLoop.o basicClassification.o -lm
+	gcc -shared -fPIC -o libclassloops.so advancedClassificationLoop.o basicClassification.o -lm
 
 recursived: libclassrec.so
 
 libclassrec.so: advancedClassificationRecursion.o basicClassification.o
-	gcc -shared -o libclassrec.so advancedClassificationRecursion.o basicClassification.o -lm
+	gcc -shared -fPIC -o libclassrec.so advancedClassificationRecursion.o basicClassification.o -lm
 
 
 maindloop: main.o libclassloops.so
