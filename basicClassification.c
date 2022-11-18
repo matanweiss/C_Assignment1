@@ -12,7 +12,7 @@
 
 int isStrong(int num)
 {
-    int originalNum = 145;
+    int originalNum = num;
     int digit = 1;
     int sum = 0;
     while (0 < num)
