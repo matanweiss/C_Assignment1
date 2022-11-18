@@ -3,14 +3,12 @@ all: mains loops maindloop maindrec
 loops: libclassloops.a
 
 libclassloops.a: advancedClassificationLoop.o basicClassification.o
-	ar rcs libclassloops.a advancedClassificationLoop.o basicClassification.o
-	ranlib libclassloops.a
+	ar -rcs libclassloops.a advancedClassificationLoop.o basicClassification.o
 
 recursives: libclassrec.a
 
 libclassrec.a: advancedClassificationRecursion.o basicClassification.o
-	ar rcs libclassrec.a advancedClassificationRecursion.o basicClassification.o
-	ranlib libclassrec.a
+	ar -rcs libclassrec.a advancedClassificationRecursion.o basicClassification.o
 
 mains: main.o libclassrec.a
 	gcc -Wall -o mains main.o libclassrec.a -lm
