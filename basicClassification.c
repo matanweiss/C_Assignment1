@@ -2,10 +2,13 @@
 #include "NumClass.h"
 // int main()
 // {
-//     printf("%d\n", isPrime(7));
-//     printf("%d\n", isPrime(31));
-//     printf("%d\n", isPrime(21));
-//     printf("%d\n", isStrong(145));
+// printf("%d\n", isPrime(1));
+// printf("%d\n", isPrime(0));
+// printf("%d\n", isPrime(7));
+// printf("%d\n", isPrime(31));
+// printf("%d\n", isPrime(21));
+//     printf("%d\n", isStrong(0));
+//     printf("%d\n", isStrong(1));
 //     printf("Ahalan\n\n");
 //     return 0;
 // }
@@ -21,7 +24,7 @@ int isStrong(int num)
         num = num / 10;
         sum += factorial(digit);
     }
-    return sum == originalNum;
+    return (sum == originalNum && originalNum != 0);
 }
 
 int factorial(int num)
@@ -43,5 +46,5 @@ int isPrime(int num)
             return 0;
         }
     }
-    return 1;
+    return num == 0 ? 0 : 1;
 }
